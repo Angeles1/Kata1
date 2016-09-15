@@ -21,8 +21,8 @@ public class Person {
     }
 
     public int getAge(){
-        long year = 365*24*60*60*1000L;
-        return (int) ((new Date().getTime()-birthdate.getTime())/year);
+      //  long year = 365*24*60*60*1000L;
+        return (int) ((new Date().getTime()-birthdate.getTime())/31536000000L);
     }
     
     
